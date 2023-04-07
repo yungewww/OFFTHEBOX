@@ -9,6 +9,10 @@
         <script src="https://aframe.io/releases/1.4.1/aframe.min.js"></script>
         <script>
             let button;
+            function redirect() {
+                            alert("You found the gate to THE BOX. Are you ready?");
+                            window.location.replace("https://offthebox.one/introduction");
+                        }
             AFRAME.registerComponent("rotation-reader", {
                 tick: function () {
                     var rotation = this.el.getAttribute("rotation");
@@ -16,12 +20,8 @@
                       return button = 1;
                     }
                     if(button === 1){
-                        function redirect() {
-                            alert("You found the gate to THE BOX. Are you ready?");
-                            window.location.replace("https://offthebox.one/introduction");
-                        }
-                        setTimeout(redirect, 1000);
-                }
+                        redirect();
+                    }
                 }
             });
         </script>
