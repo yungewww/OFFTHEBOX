@@ -1,32 +1,37 @@
 <!DOCTYPE html>
 <html>
-  <head>
-      <meta charset="utf-8"/>
-      <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-      <title>?</title>
+        <title>?</title>
 
-      <script src="https://aframe.io/releases/1.4.1/aframe.min.js"></script>
-    <script>
-        function redirect() {
-          alert("你找到了THE BOX的接口。准备好了吗？");
-           window.location.replace("https://offthebox.one/introduction");
-        }
-        setTimeout(redirect, 15000);
-    </script>
+        <script src="https://aframe.io/releases/1.4.1/aframe.min.js"></script>
+        <script>
+            AFRAME.registerComponent("rotation-reader", {
+                tick: function () {
+                    var rotation = this.el.getAttribute("rotation");
+                    if (rotation.y < -135 || rotation.y > 135 || rotation.x > 75) {
+                        setTimeout(redirect, 3000);
+                    }
+                },
+            });
 
-  </head>
+            function redirect() {
+                alert("You found the gate to THE BOX. Are you ready?");
+                window.location.replace("https://offthebox.one/introduction");
+            }
+        </script>
+    </head>
 
-  <body>
-    <a-scene>
-        <audio src="https://cdn.glitch.global/cbe60ee9-9d6b-40fa-a027-6a75a4dd4fd1/audio.wav?v=1680851777165" autoplay="true"></audio>
+    <body>
+        <a-scene>
+            <audio src="https://cdn.glitch.global/cbe60ee9-9d6b-40fa-a027-6a75a4dd4fd1/audio.wav?v=1680851777165" autoplay="true"></audio>
 
-        <a-entity id="rig" position="25 10 0">
-
-            <a-camera position="0 0 0"></a-camera>
-            <a-sky src="https://raw.githubusercontent.com/yungewww/offthebox/main/image.png" rotation="0 -90 0"></a-sky>
-
-        </a-entity>
-    </a-scene>
-  </body>
+            <a-entity id="rig" position="25 10 0">
+                <a-camera position="0 0 0"></a-camera>
+                <a-sky src="https://raw.githubusercontent.com/yungewww/offthebox/main/image.png" rotation="0 -90 0"></a-sky>
+            </a-entity>
+        </a-scene>
+    </body>
 </html>
