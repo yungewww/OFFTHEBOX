@@ -13,15 +13,16 @@
                     var rotation = this.el.getAttribute("rotation");
                     if (rotation.y < -135 || rotation.y > 135 || rotation.x > 75) {
                         // console.log("yes");
+                        function redirect() {
+                alert("You found the gate to THE BOX. Are you ready?");
+                window.location.replace("https://offthebox.one/introduction");
+            }
                         setTimeout(redirect, 0);
                     }
                 },
             });
 
-            function redirect() {
-                alert("You found the gate to THE BOX. Are you ready?");
-                window.location.replace("https://offthebox.one/introduction");
-            }
+            
         </script>
     </head>
 
