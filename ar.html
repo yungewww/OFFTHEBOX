@@ -8,19 +8,15 @@
 
         <script src="https://aframe.io/releases/1.4.1/aframe.min.js"></script>
         <script>
-            let button = 0;
+            function redirect() {
+                alert("You found the gate to THE BOX. Are you ready?");
+                window.location.replace("https://offthebox.one/introduction");
+            }
             AFRAME.registerComponent("rotation-reader", {
                 tick: function () {
                     var rotation = this.el.getAttribute("rotation");
                     if (rotation.y < -135 || rotation.y > 135 || rotation.x > 75) {
-                      console.log("yes");
-                      button = 1;
-                    }
-                    function redirect() {
-                        alert("You found the gate to THE BOX. Are you ready?");
-                        window.location.replace("https://offthebox.one/introduction"); }
-                    if (button === 1) {
-                      setTimeout(redirect, 0);
+                      setTimeout(redirect, 3000);
                     }
                 },
             });
