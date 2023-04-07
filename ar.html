@@ -12,6 +12,7 @@
                 tick: function () {
                     var rotation = this.el.getAttribute("rotation");
                     if (rotation.y < -135 || rotation.y > 135 || rotation.x > 75) {
+                        console.log("yes");
                         setTimeout(redirect, 3000);
                     }
                 },
