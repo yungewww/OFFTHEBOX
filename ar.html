@@ -15,7 +15,7 @@
             AFRAME.registerComponent("rotation-reader", {
                 tick: function () {
                     var rotation = this.el.getAttribute("rotation");
-                    if (rotation.y < -165 || rotation.y > 165 || rotation.x > 85) {
+                    if (rotation.y < -200 || rotation.y > 200 || rotation.x > 85) {
                       redirect();
                     }
                 }
