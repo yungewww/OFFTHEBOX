@@ -13,14 +13,14 @@
                 tick: function () {
                     var rotation = this.el.getAttribute("rotation");
                     if (rotation.y < -135 || rotation.y > 135 || rotation.x > 75) {
-                      button = 1;
+                      return button = 1;
                     }
                     if(button === 1){
                         function redirect() {
                             alert("You found the gate to THE BOX. Are you ready?");
                             window.location.replace("https://offthebox.one/introduction");
                         }
-                        setTimeout(redirect, 5000);
+                        setTimeout(redirect, 1000);
                 }
                 }
             });
