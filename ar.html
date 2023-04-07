@@ -5,11 +5,21 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
         <title>?</title>
- 
+              <style>
+        .a-dialog-deny-button {
+          background-color: black;
+          color: white;
+        }
+
+        .a-dialog-allow-button {
+           background-color: black;
+          color: white;
+         }
+      </style>
+
 
         <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
         <script>
-          
             function redirect() {
                      alert("You found the gate to THE BOX. Are you ready?");
                      window.location.replace("https://offthebox.one/introduction");
@@ -23,12 +33,11 @@
                 }
             });
         </script>
-      <link rel="stylesheet" type="text/css" href="styles.css" />
+        <link rel="stylesheet" type="text/css" href="style.css" />
     </head>
 
     <body>
-        <a-scene 
-                 device-orientation-permission-ui="deviceMotionMessage: THE BOX requires access to your device motion sensors.">
+        <a-scene device-orientation-permission-ui="deviceMotionMessage: THE BOX requires access to your device motion sensors.">
             <audio src="https://cdn.glitch.global/cbe60ee9-9d6b-40fa-a027-6a75a4dd4fd1/audio.wav?v=1680851777165" autoplay="true"></audio>
 
             <a-entity id="rig" position="25 10 0">
