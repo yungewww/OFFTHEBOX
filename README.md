@@ -1,4 +1,4 @@
-OFF THE BOX is also a gamified narrative experience project involving Web AR/VR and hand gesture detection. By decoding information and solving puzzles from clues hidden in the film, audiences will find a password to open a website. As a result, they will be added to the invitation list of THE BOX as a gesture of gratitude to early audiences.
+OFF THE BOX is a gamified narrative experience project involving Web AR/VR and hand gesture detection. By decoding information and solving puzzles from clues hidden in the film, audiences will find a password to open a website. As a result, they will be added to the invitation list of THE BOX as a gesture of gratitude to early audiences.
 
 **Cheat Links to the Game:**
 
