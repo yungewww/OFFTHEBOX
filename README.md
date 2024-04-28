@@ -11,6 +11,7 @@ A video walkthrough and design document of the game will be available soon at my
 
 ![Image text](https://github.com/yungewww/offthebox/blob/main/images/readme_1.png)
 ![Image text](https://github.com/yungewww/offthebox/blob/main/images/readme_2.png)
-![Image text](https://github.com/yungewww/offthebox/blob/main/images/vr.gif | width=100)
-![Image text](https://github.com/yungewww/offthebox/blob/main/images/puzzle.gif | width=100)
-![Image text](https://github.com/yungewww/offthebox/blob/main/images/one.gif | width=100)
+
+<img src="https://github.com/yungewww/offthebox/blob/main/images/vr.gif" width="100">
+<img src="https://github.com/yungewww/offthebox/blob/main/images/puzzle.gif" width="100">
+<img src="https://github.com/yungewww/offthebox/blob/main/images/one.gif" width="100">
