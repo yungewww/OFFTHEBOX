@@ -9,3 +9,8 @@ OFF THE BOX is a gamified narrative experience project involving Web AR/VR and h
 
 A video walkthrough and design document of the game will be available soon at my portfolio website [yungewen.com](https://www.yungewen.com/). Thanks for your patience.
 
+![Image text](https://github.com/yungewww/offthebox/blob/main/images/readme_1.png)
+![Image text](https://github.com/yungewww/offthebox/blob/main/images/readme_2.png)
+![Image text](https://github.com/yungewww/offthebox/blob/main/images/vr.gif)
+![Image text](https://github.com/yungewww/offthebox/blob/main/images/puzzle.gif)
+![Image text](https://github.com/yungewww/offthebox/blob/main/images/one.gif)
